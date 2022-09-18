@@ -1,0 +1,64 @@
+.transactions {
+    color: white;
+    width: 30%;
+    padding: 40px;
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.package {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.job_data {
+    padding-top: 16px;
+    padding-left: 15px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(99, 99, 99);
+    border-radius: 20px;
+    border: none;
+    display: inline-flex;
+}
+
+.search-input {
+    background: none;
+    border: none;
+    color: white;
+}
+
+.icon {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.card {
+    margin-top: 10px;
+    background-color: rgb(99, 99, 99);
+}
+
+input:focus {
+    outline: none;
+    color: white;
+}
+
+.enterprise_logo {
+    border-radius: 50%;
+    width: 45px;
+    margin: 10px;
+}
+
+.header,
+.body {
+    margin: 10px;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.504);
+}

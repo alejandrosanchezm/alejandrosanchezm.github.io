@@ -1,0 +1,38 @@
+<div class="transactions">
+    <div class="search-bar" (click)="this.enableSearch()">
+        <fa-icon [icon]="faMagnifyingGlass" id="search" *ngIf="!searching" class="icon"></fa-icon>
+        <fa-icon [icon]="faArrowLeft" id="clean" *ngIf="searching" (click)="this.disableSearch()" class="icon"></fa-icon>
+        <input #inputtext class="search-input" type="search" placeholder="Search" (input)="filterTransactions($event.target)">
+    </div>
+    <div class="scrollable">
+        <div *ngFor="let transaction of filtered_transactions">
+            <div class="package">
+                <div class="col">
+                    <div class="date">
+                        <span>{{ transaction.date_from }} - {{ transaction.date_to }}</span>
+                        <span>{{ getTime(transaction.date_from, transaction.date_to) }}</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="header" (click)="this.openModal()">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="enterprise_logo">
+                                        <img class="enterprise_logo" [src]="transaction.enterprise_logo">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="job_data">
+                                        <div class="enterprise_name">{{ transaction.enterprise_name }}</div>
+                                        <div class="position">{{ transaction.position }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
