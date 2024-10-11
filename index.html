@@ -23,6 +23,7 @@
         async function getEncryptedData() {
             const response = await fetch(encryptedDataURL);
             const encryptedData = await response.text();
+            console.log("RESPONSE", encryptedData);
             return CryptoJS.enc.Base64.parse(encryptedData).toString(CryptoJS.enc.Utf8);
         }
 
