@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amigo Invisible</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
 </head>
 <body>
     <h1>Amigo Invisible</h1>
     <p id="resultado">Cargando...</p>
 
     <script>
-        const encryptedDataURL = "data_encrypted.txt";
-        const key = "JT9gFPWozXUASAl_wnbA3GsZ6_47vFhunR-mEwi5Axc=";  // Reemplaza con la clave en Base64 del archivo key.txt
+        const encodedDataURL = "data_encrypted.txt";
 
         // Función para obtener el parámetro 'token' de la URL
         function getTokenFromURL() {
@@ -20,36 +18,30 @@
             return urlParams.get("token");
         }
 
-async function getEncryptedData() {
-    const response = await fetch(encryptedDataURL);
-    const encryptedData = await response.text();
-    return encryptedData;  // Ahora encryptedData está en base64
-}
+        async function getEncodedData() {
+            const response = await fetch(encodedDataURL);
+            return await response.text();
+        }
 
-function desencriptarDatos(encryptedData, key) {
-    // Convierte la clave de base64 a un formato que CryptoJS pueda usar
-    const decryptedKey = CryptoJS.enc.Base64.parse(key);
-    const decryptedData = CryptoJS.AES.decrypt(encryptedData, decryptedKey, {
-        mode: CryptoJS.mode.ECB,
-        padding: CryptoJS.pad.Pkcs7
-    });
-    return JSON.parse(decryptedData.toString(CryptoJS.enc.Utf8));
-}
+        function decodeBase64ToJSON(encodedData) {
+            const decodedData = atob(encodedData);
+            return JSON.parse(decodedData);
+        }
 
-async function mostrarAmigo() {
-    const token = getTokenFromURL();
-    const encryptedData = await getEncryptedData();
-    const participantes = desencriptarDatos(encryptedData, key);
+        async function mostrarAmigo() {
+            const token = getTokenFromURL();
+            const encodedData = await getEncodedData();
+            const participantes = decodeBase64ToJSON(encodedData);
 
-    const participante = participantes.find(p => p.token === token);
-    const resultado = document.getElementById("resultado");
+            const participante = participantes.find(p => p.token === token);
+            const resultado = document.getElementById("resultado");
 
-    if (participante) {
-        resultado.textContent = `Hola ${participante.user}, debes regalar a ${participante.has_to_gift}.`;
-    } else {
-        resultado.textContent = "Token no válido o no encontrado.";
-    }
-}
+            if (participante) {
+                resultado.textContent = `Hola ${participante.user}, debes regalar a ${participante.has_to_gift}.`;
+            } else {
+                resultado.textContent = "Token no válido o no encontrado.";
+            }
+        }
 
         // Llama a la función cuando se carga la página
         mostrarAmigo();
