@@ -7,6 +7,7 @@
     <style>
         /* Estilos generales */
         body {
+            background-image: url("https://media.istockphoto.com/id/105816019/es/foto/sleazy-guy-doble-enhorabuena.jpg?s=612x612&w=0&k=20&c=0zSSce_qEJRuk_zB5R84h8x4jOKXL3q6y77xvRHsF_k=");
             background-color: #ffeb3b;
             font-family: 'Comic Sans MS', 'Comic Sans', cursive;
             color: #d32f2f;
@@ -59,10 +60,10 @@
     </style>
 </head>
 <body>
-    <h1>🎉 ¡Amigo Invisible! 🎉</h1>
+    <div style="background: rgb(221, 245, 68); padding: 15px; width: fit-content; left: 31%; position: relative">
+        <h1>🎉 ¡Amigo Invisible! 🎉</h1>
+    </div>
     <p id="resultado">Cargando tu amigo invisible... 🎅💌</p>
-    <button onclick="window.location.reload()">🔄 Volver a Intentar 🔄</button>
-
     <script>
         const encodedDataURL = "data_encrypted.txt";
 
@@ -84,7 +85,7 @@
 
         async function mostrarAmigo() {
             const token = getTokenFromURL();
-            const encodedData = await getEncodedData();
+            const encodedData = "W3sidXNlciI6ICJwZXBlIiwgImhhc190b19naWZ0IjogIm90aGVyX3BlcnNvbiIsICJ0b2tlbiI6ICJhc2RmYXNkZiJ9LCB7InVzZXIiOiAiYW5hIiwgImhhc190b19naWZ0IjogImp1YW4iLCAidG9rZW4iOiAicXdlcnF3ZXIifSwgeyJ1c2VyIjogImp1YW4iLCAiaGFzX3RvX2dpZnQiOiAicGVwZSIsICJ0b2tlbiI6ICJ6eGN2enhjdiJ9XQ==";
             const participantes = decodeBase64ToJSON(encodedData);
 
             const participante = participantes.find(p => p.token === token);
@@ -93,7 +94,7 @@
             if (participante) {
                 resultado.textContent = `🎁 Hola ${participante.user}! Tu amigo invisible es... 🎩🎉 ${participante.has_to_gift}! 🤫🤐`;
             } else {
-                resultado.textContent = "❌ Token no válido o no encontrado. 🤔 ¡Intenta de nuevo!";
+                resultado.textContent = "❌ Enlace no válido o no encontrado. 🤔 ¡Intenta de nuevo!";
             }
         }
 
