@@ -3,14 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amigo Invisible</title>
+    <title>🎁 Super Amigo Invisible 🎉</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: #ffeb3b;
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            color: #d32f2f;
+            text-align: center;
+            padding: 2rem;
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #673ab7;
+            text-shadow: 2px 2px #f44336;
+            margin-bottom: 1rem;
+        }
+
+        p#resultado {
+            background-color: #4caf50;
+            color: #ffffff;
+            font-size: 2rem;
+            padding: 1rem;
+            border: 5px dashed #d32f2f;
+            box-shadow: 5px 5px #333;
+            display: inline-block;
+            margin-top: 1.5rem;
+            width: 80%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            word-wrap: break-word;
+        }
+
+        /* Botón gracioso */
+        button {
+            background-color: #03a9f4;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 1rem 2rem;
+            border: 4px dotted #d32f2f;
+            cursor: pointer;
+            transition: transform 0.2s;
+            box-shadow: 5px 5px #333;
+        }
+        
+        button:hover {
+            transform: rotate(-5deg) scale(1.1);
+            background-color: #009688;
+        }
+    </style>
 </head>
 <body>
-    <h1>Amigo Invisible</h1>
-    <p id="resultado">Cargando...</p>
+    <h1>🎉 ¡Amigo Invisible! 🎉</h1>
+    <p id="resultado">Cargando tu amigo invisible... 🎅💌</p>
+    <button onclick="window.location.reload()">🔄 Volver a Intentar 🔄</button>
 
     <script>
-        const encodedDataURL = "data_encrypted.txt";
+        const encodedDataURL = "data_encoded.txt";
 
         // Función para obtener el parámetro 'token' de la URL
         function getTokenFromURL() {
@@ -37,9 +91,9 @@
             const resultado = document.getElementById("resultado");
 
             if (participante) {
-                resultado.textContent = `Hola ${participante.user}, debes regalar a ${participante.has_to_gift}.`;
+                resultado.textContent = `🎁 Hola ${participante.user}! Tu amigo invisible es... 🎩🎉 ${participante.has_to_gift}! 🤫🤐`;
             } else {
-                resultado.textContent = "Token no válido o no encontrado.";
+                resultado.textContent = "❌ Token no válido o no encontrado. 🤔 ¡Intenta de nuevo!";
             }
         }
 
