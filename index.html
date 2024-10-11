@@ -85,7 +85,7 @@
 
         async function mostrarAmigo() {
             const token = getTokenFromURL();
-            const encodedData = "W3sidXNlciI6ICJwZXBlIiwgImhhc190b19naWZ0IjogIm90aGVyX3BlcnNvbiIsICJ0b2tlbiI6ICJhc2RmYXNkZiJ9LCB7InVzZXIiOiAiYW5hIiwgImhhc190b19naWZ0IjogImp1YW4iLCAidG9rZW4iOiAicXdlcnF3ZXIifSwgeyJ1c2VyIjogImp1YW4iLCAiaGFzX3RvX2dpZnQiOiAicGVwZSIsICJ0b2tlbiI6ICJ6eGN2enhjdiJ9XQ==";
+            const encodedData = await getEncodedData();
             const participantes = decodeBase64ToJSON(encodedData);
 
             const participante = participantes.find(p => p.token === token);
