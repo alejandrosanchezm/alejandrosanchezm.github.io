@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Invisible</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</head>
+<body>
+    <h1>Amigo Invisible</h1>
+    <p id="resultado">Cargando...</p>
+
+    <script>
+        const encryptedDataURL = "data_encrypted.txt";
+        const key = "YOUR_BASE64_ENCRYPTION_KEY";  // Reemplaza con la clave en Base64 del archivo key.txt
+
+        // Función para obtener el parámetro 'token' de la URL
+        function getTokenFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get("token");
+        }
+
+        async function getEncryptedData() {
+            const response = await fetch(encryptedDataURL);
+            const encryptedData = await response.text();
+            return CryptoJS.enc.Base64.parse(encryptedData).toString(CryptoJS.enc.Utf8);
+        }
+
+        function desencriptarDatos(encryptedData, key) {
+            const decryptedData = CryptoJS.AES.decrypt(encryptedData, key);
+            return JSON.parse(decryptedData.toString(CryptoJS.enc.Utf8));
+        }
+
+        async function mostrarAmigo() {
+            const token = getTokenFromURL();
+            const encryptedData = await getEncryptedData();
+            const participantes = desencriptarDatos(encryptedData, key);
+
+            const participante = participantes.find(p => p.token === token);
+            const resultado = document.getElementById("resultado");
+
+            if (participante) {
+                resultado.textContent = `Hola ${participante.user}, debes regalar a ${participante.has_to_gift}.`;
+            } else {
+                resultado.textContent = "Token no válido o no encontrado.";
+            }
+        }
+
+        // Llama a la función cuando se carga la página
+        mostrarAmigo();
+    </script>
+</body>
+</html>
