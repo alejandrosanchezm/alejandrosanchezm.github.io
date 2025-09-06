@@ -1,0 +1,288 @@
+{
+  "personalInfo": {
+    "name": "Alejandro Sánchez Marcos",
+    "title": "Software Engineer",
+    "location": "Barcelona, Cataluña, España",
+    "email": "alejandrosanchezm@usal.es",
+    "phone": "639411718",
+    "linkedin": "linkedin.com/in/alejandro-sánchez-marcos-",
+    "photo": "images/profile.jpeg"
+  },
+  "summary": " Ingeniero Informático con varios años de experiencia en un perfil multidisciplinar. Mi día a día se mueve entre Python y React, pero lo que realmente me define no es el stack, sino la capacidad de analizar un problema y encontrar una solución eficiente y adaptada a cada caso. He participado en proyectos que van desde aplicaciones web hasta soluciones de Big Data, con un enfoque especial en que la tecnología tenga un impacto real. Me gusta trabajar con mis compañeros, intercambiar ideas y aprender de otros enfoques. Creo que la colaboración es necesaria para crecer en todos los aspectos laborales.",
+  "specialties": [
+    {
+      "title": "Desarrollador Web",
+      "icon": "fas fa-globe",
+      "color": "blue",
+      "description": "Desarrollo fullstack con React, Python, FastAPI y arquitecturas modernas",
+      "technologies": ["React", "Python", "FastAPI", "TypeScript", "PostgreSQL"]
+    },
+    {
+      "title": "Científico de Datos",
+      "icon": "fas fa-chart-line",
+      "color": "green",
+      "description": "Análisis de datos, machine learning y extracción de insights",
+      "technologies": ["Pandas", "Jupyter", "Scikit-learn", "Python", "Análisis estadístico"]
+    },
+    {
+      "title": "Ingeniero Big Data",
+      "icon": "fas fa-database",
+      "color": "orange",
+      "description": "Procesamiento de grandes volúmenes de datos y arquitecturas distribuidas",
+      "technologies": ["Kafka", "Elasticsearch", "Clickhouse", "KSQLDB", "Arquitecturas distribuidas"]
+    },
+    {
+      "title": "Observabilidad",
+      "icon": "fas fa-eye",
+      "color": "purple",
+      "description": "Monitoreo, logging, métricas y trazabilidad de sistemas distribuidos",
+      "technologies": ["Grafana", "Prometheus", "Elasticsearch", "Kibana", "Métricas", "APM"]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Sfy, Soft For You",
+      "position": "Tech Lead",
+      "duration": "feb. 2023 - actualidad · 2 años 7 meses",
+      "location": "Barcelona, Cataluña, España · Híbrido",
+      "type": "Jornada completa",
+      "sector": "Banca y Observabilidad",
+      "description": "Progresión profesional dentro de un equipo multidisciplinar y ágil, evolucionando desde Fullstack Engineer hasta Tech Lead. Responsable del desarrollo, diseño de soluciones y coordinación de equipo en un producto en constante evolución.",
+      "technologies": ["FastAPI", "Python", "React.js", "TypeScript", "Elasticsearch", "Redis", "Pandas", "Kubernetes", "Docker", "Clickhouse", "Kafka", "Flutter", "Dart", "Celery", "PostgreSQL", "Jupyter", "Git", "KSQL", "Vite"],
+      "logo": "images/plexus_sfy.jpeg",
+      "category": "software",
+      "careerProgression": [
+        {
+          "role": "Tech Lead",
+          "period": "feb. 2024 - actualidad",
+          "responsibilities": "Contacto directo con cliente, gestión de proyecto, coordinación de equipo, diseño e implementación de soluciones y mentoría técnica del equipo."
+        },
+        {
+          "role": "Fullstack Engineer",
+          "period": "feb. 2023 - feb. 2024",
+          "responsibilities": "Desarrollo full-stack, participación en diseño de soluciones, implementación de funcionalidades y despliegue de aplicaciones."
+        }
+      ]
+    },
+    {
+      "company": "Deloitte",
+      "position": "Fullstack Developer - Analyst",
+      "duration": "oct. 2021 - feb. 2023 · 1 año 5 meses",
+      "location": "Barcelona, Cataluña, España",
+      "type": "Jornada completa",
+      "sector": "Sector Público",
+      "description": "Mantenimiento de distintas aplicaciones web, afrontando tareas de distintos ámbitos: Evaluación, codificación y resolución de incidencias. Planificación, estimación y desarrollo de evolutivos. Desarrollo de documentación. Análisis de rendimiento de las aplicaciones. Utilizando metodologías Scrum para la organización, y metodologías DevOps para el desarrollo de los proyectos.",
+      "technologies": ["Django", "Angular", "Vue.js", "PostgreSQL", "OracleDB", "Redis", "Pentaho", "Kubernetes", "Python", "Celery", "Git", "DevOps", "Scrum"],
+      "logo": "images/deloitte.jpeg",
+      "category": "software",
+      "keyTasks": ["Desarrollo full-stack", "Resolución de incidencias", "Desarrollo de evolutivos", "Análisis de rendimiento", "Metodologías ágiles", "DevOps"]
+    },
+    {
+      "company": "Grupo de Investigación BISITE",
+      "position": "Data Scientist - Prácticas",
+      "duration": "jun. 2020 - ago. 2020 · 3 meses",
+      "location": "Salamanca, Castilla y León, España",
+      "type": "Contrato de prácticas",
+      "sector": "Investigación Académica",
+      "description": "Me formé en Ciencia de datos e inteligencia artificial, utilizando el entorno de Jupyter, Pandas, Numpy como herramienta principal. Llevé a cabo el desarrollo de Notebooks para el procesamiento de datos y extracción del conocimiento, así como desarrollar a partir de ellos modelos de inteligencia artificial y API Rest en Flask.",
+      "technologies": ["Flask", "Python", "Scikit-learn", "Pandas", "Jupyter", "Git"],
+      "logo": "images/bisite.jpeg",
+      "category": "software",
+      "keyTasks": ["Ciencia de datos", "Machine Learning", "Desarrollo de APIs", "Procesamiento de datos", "Investigación aplicada"]
+    },
+    {
+      "company": "Rockbotic",
+      "position": "Profesor Extraescolares Robótica",
+      "duration": "feb. 2019 - jun. 2019 · 5 meses",
+      "location": "Salamanca y alrededores, España",
+      "type": "Jornada parcial",
+      "description": "Profesor de Actividades Extraescolares relacionadas con la Robótica y las nuevas tecnologías, para niños entre 6 y 12 años aproximadamente.",
+      "technologies": [],
+      "logo": "images/rockbotic.jpeg",
+      "category": "other"
+    },
+    {
+      "company": "Profesor Particular",
+      "position": "Profesor de Informática y Matemáticas",
+      "duration": "2018 - 2019 · 1 año",
+      "location": "Salamanca, España",
+      "type": "Autónomo",
+      "sector": "Educación Privada",
+      "description": "Clases particulares de informática y matemáticas a estudiantes de diferentes niveles educativos. Adaptación de metodologías de enseñanza según las necesidades individuales de cada alumno, preparación de material didáctico y seguimiento del progreso académico.",
+      "technologies": [],
+      "logo": "",
+      "category": "other",
+      "keyTasks": ["Docencia personalizada", "Preparación de material didáctico", "Seguimiento académico", "Metodologías adaptativas"]
+    },
+    {
+      "company": "La Piñata Charra",
+      "position": "Cuidado infantil en Eventos",
+      "duration": "abr. 2018 - may. 2018 · 2 meses",
+      "location": "Salamanca, Castilla y León, España",
+      "type": "Contrato temporal",
+      "description": "Llamadas puntuales para realizar de Monitor de Tiempo libre en eventos, cuidando a los niños y proponiéndoles juegos, así como cuidándoles durante la comida.",
+      "technologies": [],
+      "logo": "images/pinata.jpg",
+      "category": "other"
+    },
+    {
+      "company": "TURMA OCIO",
+      "position": "Monitor de Ocio y Tiempo Libre",
+      "duration": "may. 2017 - may. 2017 · 1 mes",
+      "location": "Ávila",
+      "type": "Contrato temporal",
+      "description": "Monitor durante dos semanas en un campamento bilingüe de la empresa Turma en la Sierra de Gredos, Ávila.",
+      "technologies": [],
+      "logo": "images/turma.jpeg",
+      "category": "other"
+    },
+    {
+      "company": "PizzaExpress",
+      "position": "Encargado de limpieza",
+      "duration": "ene. 2016 - jun. 2016 · 6 meses",
+      "location": "London, Reino Unido",
+      "type": "Jornada completa",
+      "description": "Encargado de la limpieza de locales, mobiliario, máquinas y menaje de distintos restaurantes de Londres. También me encargaba de la organización de los repartos de comida con su correspondiente etiquetado y envasado, y como apoyo en otros puestos cuando era necesario.",
+      "technologies": [],
+      "logo": "images/pizzaexpress.jpeg",
+      "category": "other"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad de Salamanca",
+      "degree": "Grado en Ingeniería Informática",
+      "duration": "ene. 2017 - jul. 2021",
+      "location": "Salamanca, España",
+      "logo": "images/usal.jpeg"
+    },
+    {
+      "institution": "Alma Mater Studiorum - Università di Bologna",
+      "degree": "Grado en Ingeniería Informática",
+      "duration": "2019 - 2020",
+      "location": "Bologna, Italia",
+      "note": "Erasmus",
+      "logo": "images/bologna.jpeg"
+    }
+  ],
+  "skills": {
+    "backend": [
+      {"name": "Python", "level": 5},
+      {"name": "FastAPI", "level": 5},
+      {"name": "Celery", "level": 5},
+      {"name": "SQLAlchemy", "level": 5},
+      {"name": "Alembic", "level": 5},
+      {"name": "Django", "level": 3},
+      {"name": "Flask", "level": 4}
+    ],
+    "frontend": [
+      {"name": "React.js", "level": 4},
+      {"name": "JavaScript", "level": 4},
+      {"name": "Vite", "level": 4},
+      {"name": "TypeScript", "level": 3},
+      {"name": "Vue.js", "level": 2},
+      {"name": "Angular", "level": 2}
+    ],
+    "mobile": [
+      {"name": "Flutter", "level": 1},
+      {"name": "Dart", "level": 1}
+    ],
+    "databases": [
+      {"name": "PostgreSQL", "level": 5},
+      {"name": "Redis", "level": 5},
+      {"name": "OracleDB", "level": 2},
+      {"name": "MongoDB", "level": 2}
+    ],
+    "infrastructure": [
+      {"name": "Docker", "level": 3},
+      {"name": "Kubernetes", "level": 2},
+      {"name": "Git", "level": 4},
+      {"name": "Linux", "level": 4},
+      {"name": "macOS", "level": 4}
+    ],
+    "dataScience": [
+      {"name": "Pandas", "level": 4},
+      {"name": "Jupyter", "level": 4},
+      {"name": "Scikit-learn", "level": 3}
+    ],
+    "bigData": [
+      {"name": "Kafka", "level": 3},
+      {"name": "KSQLDB", "level": 3},
+      {"name": "Elasticsearch", "level": 4},
+      {"name": "Clickhouse", "level": 3},
+      {"name": "Grafana", "level": 4},
+      {"name": "Prometheus", "level": 3},
+      {"name": "Pentaho", "level": 2}
+    ],
+    "tools": [
+      {"name": "Suite Atlassian (Jira/Confluence)", "level": 4},
+      {"name": "Microsoft Office", "level": 3},
+      {"name": "GitHub/GitLab", "level": 3},
+      {"name": "Lens", "level": 3},
+      {"name": "Adobe Illustrator", "level": 2},
+      {"name": "Adobe Photoshop", "level": 2},
+      {"name": "Rally", "level": 2},
+      {"name": "Postman", "level": 4},
+    ]
+  },
+  "projects": [
+    {
+      "title": "Plataforma Web de Pruebas Psicotécnicas con Análisis de Comportamiento",
+      "duration": "2022 - 2023",
+      "company": "Colaboración con Psicólogo Profesional",
+      "type": "Proof of Concept (POC)",
+      "description": "Desarrollo de una prueba de concepto para una plataforma web innovadora de evaluación psicotécnica. El proyecto integra la administración de pruebas psicológicas tradicionales con análisis avanzado de patrones de comportamiento del usuario durante la realización de las pruebas. Incluye métricas de tiempo de respuesta, patrones de navegación, y análisis de interacciones para proporcionar insights adicionales sobre el perfil psicológico del evaluado, complementando los resultados tradicionales con datos de comportamiento digital.",
+      "technologies": ["JavaScript", "Python", "Data Analytics", "Behavioral Analysis", "Web Development"]
+    },
+    {
+      "title": "Diseño e Implementación de una herramienta para la predicción de la patogenicidad de variantes genéticas (TFG)",
+      "duration": "ene. 2021 - jul. 2021",
+      "company": "Grupo de Investigación BISITE",
+      "type": "Trabajo de Fin de Grado",
+      "description": "Trabajo de Fin de Grado desarrollado en colaboración con el Grupo de Investigación BISITE. Consistió en un estudio completo de Ciencia de Datos sobre datasets genéticos para generar un modelo de inteligencia artificial capaz de predecir la patogenicidad de variantes genéticas (SNP). El proyecto incluyó el desarrollo de una aplicación web que permite a los usuarios realizar peticiones de predicción de forma interactiva.",
+      "technologies": ["Python", "Machine Learning", "Flask", "Pandas", "Scikit-learn", "Jupyter"]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Introducción a la Inteligencia Artificial: aprendizaje automático y redes neuronales",
+      "issuer": "Universidad de Salamanca",
+      "date": "dic. 2017",
+      "logo": "images/usal.jpeg",
+      "description": "Curso certificado sobre fundamentos de inteligencia artificial, aprendizaje automático y redes neuronales."
+    },
+    {
+      "title": "Monitor de Ocio y Tiempo Libre",
+      "issuer": "TURMA OCIO",
+      "date": "jul. 2016",
+      "logo": "images/turma.jpeg",
+      "description": "Certificación oficial para el desarrollo de actividades de ocio y tiempo libre con menores."
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "level": "Nativo",
+      "proficiency": 100
+    },
+    {
+      "language": "Inglés",
+      "level": "Alto",
+      "proficiency": 85
+    },
+    {
+      "language": "Italiano",
+      "level": "Conversacional Básico/Intermedio",
+      "proficiency": 65
+    },
+    {
+      "language": "Catalán",
+      "level": "Básico",
+      "proficiency": 40
+    }
+  ]
+}
+
+
+
+
